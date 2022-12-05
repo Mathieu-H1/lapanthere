@@ -6,6 +6,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+/*modifications: remplacement h2 par div et texte en 14px*/
+.ex_h2 {
+    font-size: 18px;
+}
+/*fin de modifications*/
 
 a,
 button {

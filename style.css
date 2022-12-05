@@ -6,9 +6,15 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-/*modifications: remplacement h2 par div et texte en 14px*/
+/*modifications*/
 .ex_h2 {
     font-size: 18px;
+}
+.icon-md {
+    margin: 15px 0 5px 0;
+}
+.social_name {
+    margin-bottom: 10px;
 }
 /*fin de modifications*/
 
@@ -678,7 +684,7 @@ a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
@@ -687,7 +693,7 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -706,7 +712,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
@@ -723,7 +729,7 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0px 0px 0px #000000;
 }
 

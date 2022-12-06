@@ -16,8 +16,19 @@ body {
 .social_name {
     margin-bottom: 10px;
 }
+.social {
+    color: white;
+}
 .citation {
     font-size: 16px;
+    color: rgba(0, 0, 0, 0.707);
+}
+.black-page1 {
+    color: rgba(0, 0, 0, 0.707);
+}
+.black-page2 {
+    color: rgba(0, 0, 0, 0.707);
+    font-size:x-large;
 }
 /*fin de modifications*/
 
@@ -656,15 +667,17 @@ h3,
 h4,
 h5,
 h6,
-p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
 }
-
+/*modification pour contraste*/
+p,a {
+    color: rgba(0, 0, 0, 0.707);
+}
+/*fin de modification*/
 .container {
     max-width: 1000px;
 }
@@ -747,7 +760,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: white;
 }
 
 .portfolio-thumb {
@@ -782,7 +795,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #f3976c;
 }
 
 .tc-white {
@@ -857,6 +870,9 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
+    .black-page2 {
+        font-size: x-large;
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -904,6 +920,11 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+    .black-page2 {
+        font-size: large;
+        width: 80%;
+        padding: 0 15px 0 15px;
     }
     h1,
     h2,

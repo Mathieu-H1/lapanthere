@@ -8,7 +8,8 @@ body {
 }
 /*modifications*/
 .ex_h2 {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 .icon-md {
     margin: 15px 0 5px 0;
@@ -800,7 +801,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {

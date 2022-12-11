@@ -20,6 +20,15 @@ body {
 .social {
     color: white;
 }
+.d-bloc a:focus .icon-md {
+    color: rgba(255, 255, 255, 1);
+}
+.d-bloc a:focus .social_name {
+    color: rgba(255, 255, 255, 1);
+}
+.d-bloc a:hover .social_name {
+    color: rgba(255, 255, 255, 1);
+}
 .citation {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.707);
@@ -42,6 +51,9 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+a:focus {
+    text-decoration: none;
 }
 
 #page-loading-blocs-notifaction {
@@ -359,8 +371,8 @@ a:hover {
 }
 .nav > li a:focus {
     background: transparent;
-    border-bottom: 2px solid rgb(135, 199, 255);
-    padding-bottom: 3px;    
+    color: rgb(135, 199, 255);
+    font-weight: bolder;  
 }
 
 .navbar-toggle {
@@ -789,6 +801,11 @@ h4 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
+}
+.bold-link:focus {
+    color: rgb(135, 199, 255)!important;
+    font-weight: bolder;
+    font-size: large;
 }
 
 .bgc-white {

@@ -6,6 +6,41 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+/*modifications*/
+.ex_h2 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+.icon-md {
+    margin: 15px 0 5px 0;
+}
+.social_name {
+    margin-bottom: 10px;
+}
+.social {
+    color: white;
+}
+.d-bloc a:focus .icon-md {
+    color: rgba(255, 255, 255, 1);
+}
+.d-bloc a:focus .social_name {
+    color: rgba(255, 255, 255, 1);
+}
+.d-bloc a:hover .social_name {
+    color: rgba(255, 255, 255, 1);
+}
+.citation {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.707);
+}
+.black-page1 {
+    color: rgba(0, 0, 0, 0.707);
+}
+.black-page2 {
+    color: rgba(0, 0, 0, 0.707);
+    font-size:x-large;
+}
+/*fin de modifications*/
 
 a,
 button {
@@ -16,6 +51,9 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+a:focus {
+    text-decoration: none;
 }
 
 #page-loading-blocs-notifaction {
@@ -91,7 +129,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/modifiées/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -176,7 +214,7 @@ a:hover {
 }
 
 .d-bloc .panel .divider-h span {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: red;
 }
 
 .d-bloc .panel .a-btn {
@@ -302,13 +340,10 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
+    width: 350px;
+    height: 60px;
     margin: 0 5px 0 0;
     display: inline;
-}
-
-.navbar-brand img[src$=svg] {
-    min-width: 100px;
 }
 
 .nav-center .navbar-brand img {
@@ -323,7 +358,6 @@ a:hover {
 }
 
 .nav > li {
-    float: left;
     margin-top: 4px;
     font-size: 16px;
 }
@@ -332,9 +366,13 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover,
+.nav > li a:hover {
+    background: transparent;    
+}
 .nav > li a:focus {
     background: transparent;
+    color: rgb(135, 199, 255);
+    font-weight: bolder;  
 }
 
 .navbar-toggle {
@@ -364,6 +402,7 @@ a:hover {
 
 @media (min-width: 768px) {
     .site-navigation {
+        width: 30%;
         position: absolute;
         top: 50%;
         right: 20px;
@@ -645,15 +684,17 @@ h3,
 h4,
 h5,
 h6,
-p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
 }
-
+/*modification pour contraste*/
+p,a {
+    color: rgba(0, 0, 0, 0.707);
+}
+/*fin de modification*/
 .container {
     max-width: 1000px;
 }
@@ -673,16 +714,16 @@ a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
@@ -701,7 +742,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
@@ -718,7 +759,7 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
@@ -736,7 +777,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: white;
 }
 
 .portfolio-thumb {
@@ -761,21 +802,26 @@ h4 {
     font-weight: 900;
     text-decoration: underline!important;
 }
+.bold-link:focus {
+    color: rgb(135, 199, 255)!important;
+    font-weight: bolder;
+    font-size: large;
+}
 
 .bgc-white {
     background-color: #FFFFFF;
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    background-color: white;
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #f3976c;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
@@ -783,6 +829,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.btn-atomic-tangerine:focus {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
@@ -818,11 +868,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/modifiées/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/modifiées/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -846,15 +896,18 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
+    .black-page2 {
+        font-size: x-large;
+    }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -872,10 +925,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -884,8 +934,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -893,6 +941,11 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+    .black-page2 {
+        font-size: large;
+        width: 80%;
+        padding: 0 15px 0 15px;
     }
     h1,
     h2,

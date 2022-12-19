@@ -598,6 +598,10 @@ a[data-lightbox]:hover img {
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
+a[data-lightbox]:focus img {
+    opacity: 0.7;
+    border: 5px solid rgb(135, 199, 255);
+}
 
 #lightbox-modal {
     display: flex;
